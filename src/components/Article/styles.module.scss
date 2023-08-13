@@ -1,0 +1,72 @@
+@use '../../styles/mixins';
+@use '../../styles/colors';
+
+.article {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 60vh;
+
+  video {
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 0.6rem colors.$gray-logo;
+    margin: 0 2rem;
+  }
+
+  .text {
+    @include mixins.flex-center-column;
+    text-align: center;
+    line-height: 5rem;
+    font-size: 1.8rem;
+    margin: 0 2rem;
+    
+    h2 {
+      color: colors.$font-gray-dark;
+      border-radius: 3rem;
+      padding: 0.8rem 0.5rem;
+
+      span {
+        background-color: colors.$blue-logo;
+        border-radius: 2rem;
+        color: colors.$white;
+        padding: 0.5rem;
+      }    
+    }
+
+    p {
+      color: colors.$font-gray-dark;
+      font-size: 1.4rem;
+      line-height: 2rem;
+
+      span {
+        background-color: colors.$yelow-logo;
+        border-radius: 1rem;
+        color: colors.$white;
+        padding: 0.3rem;
+      }
+    }
+
+    .list {
+      width: 20rem;
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+
+      ul {
+        color: colors.$font-gray-dark;
+        line-height: 2rem;
+        align-items: center;
+        list-style-image: url('../../assets/images/bola-de-futebol.png');
+  
+        svg {
+          width: 0.5rem;
+          height: 0.5rem;
+        }
+
+        li {
+          text-align: left;
+        }
+      }
+    }    
+  }
+}

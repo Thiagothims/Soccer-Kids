@@ -1,0 +1,63 @@
+@use "../../styles/colors";
+
+.menu {
+  position: fixed;
+  width: 100%;
+	display: flex;
+	justify-content: space-between;
+  padding: 0.5rem 1rem;
+	background-color: colors.$blue-logo;
+  z-index: 1;
+
+	ul {
+		display: flex;
+		list-style: none;
+		align-items: center;
+	}
+
+	li {
+		text-decoration: none;
+		padding: 1rem;
+    font-size: 1.2rem;
+		
+		a {
+			color: colors.$white;
+      padding: 0.5rem;
+			text-decoration: none;
+
+      &:hover {
+        padding: 0.5rem;
+        color: colors.$blue-logo;
+        background-color: colors.$yelow-logo;
+        border-radius: 6rem;
+        transition: all 0.5s ease;
+      }
+		}  
+	}
+
+	img {
+		width: 4rem;
+		height: 4rem;
+  	padding: 0.5rem;
+    background-color: colors.$blue-logo;
+    display: flex;
+	}
+
+}
+
+.social {
+  
+  svg {
+    color: colors.$white;
+    width: 2rem;
+    height: 2rem;
+    margin: 0.8rem;
+
+    &:hover {
+      color: colors.$blue-logo;
+      background-color: colors.$yelow-logo;
+      border-radius: 6rem;
+      transition: all 0.5s ease;
+    }
+  }
+}

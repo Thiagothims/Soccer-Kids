@@ -1,0 +1,34 @@
+@use "../../styles/colors";
+
+.footer2 {
+  display: flex;
+	justify-content: center;
+  align-items: center;
+  padding: 0.3rem 1rem;
+	background-color: colors.$gray-logo;
+
+	ul {
+		display: flex;
+		list-style: none;
+		align-items: center;
+	}
+
+	li {
+		text-decoration: none;
+		padding: 0.5rem;
+		
+		a {
+			color: colors.$font-gray-dark;
+			text-decoration: none;
+
+      &:hover {
+        color: colors.$font-blue-ligth;
+      }
+		}   
+	}
+
+  div {
+    color: colors.$font-gray-dark;
+  }
+
+}

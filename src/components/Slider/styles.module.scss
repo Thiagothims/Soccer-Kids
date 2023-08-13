@@ -1,0 +1,36 @@
+@use '../../styles/mixins';
+@use '../../styles/colors';
+
+.slider {
+  width: 100%;
+  height: 30%;
+  margin: 4.4rem auto 0 auto;
+  max-height: 60%;
+  max-width: 100%;
+  @include mixins.flex-center;
+
+  .carousel {
+    cursor: grab;
+    overflow: hidden;
+    
+  }
+
+  .inner {
+    display: flex;
+
+    .images {
+      width: 50%;
+      height: 70%;
+      padding: 0 0.2rem;
+
+      img {
+        width: 40rem;
+        height: 30rem;
+        pointer-events: none;
+        border-radius: 0 0 3rem 3rem;
+        box-shadow: 0.5rem 0.5rem 0.5rem colors.$gray-logo;
+        margin-bottom: 1rem;
+      }
+    }
+  } 
+}

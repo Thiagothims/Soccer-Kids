@@ -1,0 +1,6 @@
+@use '../../styles/mixins';
+
+.plans_container {
+  width: 100%;
+  @include mixins.flex-center-column;
+}
