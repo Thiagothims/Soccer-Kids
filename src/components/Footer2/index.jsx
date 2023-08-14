@@ -12,7 +12,7 @@ function Footer2() {
             <p><BiCopyright/>Soccer Kids SA todos os direitos reservados</p>
             <p>Desenvolvido por TTS</p>
           </div>
-          <ul>
+          {/* <ul>
             <li>
               <Link to="/" >Home</Link>
             </li>
@@ -26,7 +26,7 @@ function Footer2() {
             <li>
               <Link to="/contact" >Contato</Link>
             </li>
-          </ul>
+          </ul> */}
         </Container>
       </nav>
     </footer>
