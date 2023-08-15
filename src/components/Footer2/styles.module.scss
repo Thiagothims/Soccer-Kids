@@ -1,9 +1,8 @@
 @use "../../styles/colors";
+@use '../../styles/mixins';
 
 .footer2 {
-  display: flex;
-	justify-content: center;
-  align-items: center;
+  @include mixins.flex-center;
   padding: 0.3rem 1rem;
 	background-color: colors.$gray-logo;
 
