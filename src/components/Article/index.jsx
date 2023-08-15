@@ -4,9 +4,10 @@ function Article() {
   return(
     <article className={styles.article}>
       <div>
-        <img src='../../../public/images/timeSK.png' alt='time Soccer Kids' />
+        {/* <img src='../../../public/images/timeSK.png' alt='time Soccer Kids' /> */}
+        {/* <img src='../../assets/images/timeSK.png' alt='time Soccer Kids' /> */}
         {/* <video src='../../assets/movies/futkids.mp4' width={680} autoPlay muted loop ></video> */}
-        {/* <video src='../../../public/movies/futkids.mp4' width={680} autoPlay muted loop ></video> */}
+        <video src='../../../public/movies/futkids.mp4' width={680} autoPlay muted loop ></video>
       </div>
       <div className={styles.text}>
         <h2>Venha se <span>divertir</span><br/> e <span>aprender!</span></h2>
